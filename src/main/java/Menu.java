@@ -98,7 +98,7 @@ public class Menu {
 
     //solo chofer
     private static void metodochofer() {
-        elegirCamionQueVaAUsar();
+        System.out.println("aun no tenemos metodos implementados para la clase chofer, por lo que esta area esta en mantenimiento para este prototipo");
 
     }
 
