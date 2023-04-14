@@ -37,7 +37,7 @@ public class Menu {
         }while (cerrar==true);
     }
 
-    private static boolean esAdminoChofer(int verificacion2) {
+    public static boolean esAdminoChofer(int verificacion2) {
         if (verificacion2==1){
             boolean cierre = metodoadmin();
             return cierre;
@@ -49,7 +49,7 @@ public class Menu {
         return true;
     }
 
-    private static int verificarContraseña(int usuario,String contraseña) {
+    public static int verificarContraseña(int usuario, String contraseña) {
         if (usuario==1&&contraseña.equals("1234")){
             System.out.println("usuario ADMIN aceptado");
             return 1;
@@ -76,7 +76,7 @@ public class Menu {
         return usuario;
     }
 
-    private static int verificarUsuario(String usuario) {
+    public static int verificarUsuario(String usuario) {
         if (usuario.equals("mauri")||usuario.equals("benja")){
             System.out.println("usuario ADMIN aceptado");
             return 1;
@@ -121,7 +121,7 @@ public class Menu {
 
 
     //solo admin
-    private static boolean metodoadmin() {
+    static boolean metodoadmin() {
         boolean salir = true;
         String opcion;
 
